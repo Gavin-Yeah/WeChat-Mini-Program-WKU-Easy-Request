@@ -1,0 +1,43 @@
+<!--pages/new/new.wxml-->
+<view class="container">
+<form bindsubmit="formSubmit" >
+ <view class="tunnel">
+ <view class="tunnel-text">
+  <text class="text">姓名Name:{{name}} </text>
+ </view>
+ <view class="tunnel-text">
+  <text   class="text">电话Tel:{{tel}}</text>
+ </view>
+ </view>
+
+ <view class="tunnel">
+  <view class="tunnel-text">
+  <text   class="text">设备FacilityType: </text>
+  <input  class="text" input type="text" name="facilitytype" value="{{facilitytype}}" auto-focus/>
+ </view>
+ <view class="tunnel-text">
+  <text  class="text">地点Location:</text>
+  <input  class="text" input type="text" name="facilitylocation" value="{{location}}" />
+</view>
+
+
+
+ <view class="imageline" bindtap="chooseimage">
+  <text  class="text">图片Image</text>
+  <image class="tunnel-switch"    src="../../images/camera.png"
+               style="width: 80rpx; height: 100rpx;" mode="aspectFit" ></image>
+ </view>
+<view class="tunnel-text">
+  <textarea class="textinput"placeholder="Description:" placeholder-style='color: #007AFF;' maxlength="500" style="height:370rpx; color: #007AFF;" name="description" />  
+</view> 
+
+</view>
+<view  class="buttonbox">
+  <button class="button" style="background-color: #66b2ff"  type="primary" form-type="submit" >提交Submit</button>
+</view>
+</form>
+</view>
+
+
+
+

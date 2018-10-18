@@ -1,0 +1,53 @@
+/* pages/requestinfo/requestinfo.wxss */
+page {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+ .block {
+   height: auto;
+    padding: 0 20rpx 0 20rpx;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.info {
+      width: 100%;
+    line-height: 52px;
+    font-size: 34rpx;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.info:first-child {
+    border-top: none;
+}
+
+.item {
+    font-size: 40rpx;
+    color: #007AFF;
+}
+
+.disable {
+    color: #888;
+}
+.data {
+    font-size: 40rpx;
+    color: #3399ff;
+}

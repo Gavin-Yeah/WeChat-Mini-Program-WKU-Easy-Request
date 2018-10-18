@@ -1,0 +1,44 @@
+
+<view class="page">
+    <view class="page__hd i-header">
+        <view class="g-bd">
+            <view></view>
+            <view class="g-bda">
+                <view bindtap="" class="g-bda-userinfo">
+                    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+                    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+  <view class="page__bd">
+    <form bindsubmit="formSubmit">
+      <view class="weui-cells__title"></view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <textarea class="weui-input" name="path" value="pages/new/new?objectid=" placeholder="请输入链接地址Please Input Link" maxlength="500" style="height:300rpx;" />
+          </view>
+        </view>
+      </view>
+      <view class="weui-cells__title">二维码尺寸CodeSize</view>
+       <view class="page__bd page__bd_spacing">
+        <slider show-value value="430"  activeColor=" #66b2ff"   name="width" min="30" max="600" />
+      </view>
+      <view class="weui-cells__title">链接地址 {{link}}</view>
+      <button class="weui-btn" form-type="submit" style="background-color: #66b2ff"   type="primary">生成Generate</button>
+    </form>
+  </view>
+ 
+</view>
+<view class="js_dialog" id="iosDialog2" style="opacity: 1;" wx:if="{{imageBytes}}" >
+  <view class="weui-mask"></view>
+  <view class="weui-dialog">
+    <view class="weui-dialog__bd">
+      <image class="weui-code" src="data:image/png;base64,{{imageBytes}}" />
+    </view>
+    <view class="weui-dialog__ft">
+      <view bindtap="noneWindows" class="weui-dialog__btn weui-dialog__btn_primary">知道了</view> 
+    </view>
+  </view>
+</view>

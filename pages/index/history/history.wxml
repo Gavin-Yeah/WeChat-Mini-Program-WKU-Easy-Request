@@ -1,0 +1,67 @@
+<!--pages/requestinfo/requestinfo.wxml-->
+<view class="container">
+<!-- specific information --> 
+ <view wx:if="{{ismanager===1}}" class="block">
+  <view class="info">
+   <text class="item">姓名Name </text>
+   <text class="data">{{result.user.name}}</text>
+  </view>
+  <view class="info">
+   <text class="item">电话Tel </text>
+   <text class="data" > {{result.user.tel}}</text>
+  </view>
+ </view>
+ <view class="block">
+  <view class="info">
+   <text class="item">类型Type </text>
+   <text class="data">{{result.facilitytype}}</text>
+  </view>
+  <view class="info">
+   <text class="item">地点Location </text>
+   <text class="data" >{{result.facilitylocation}}</text>
+  </view>
+  <view class="info" bindtap="description">
+   <text class="item">简介Description </text>
+    <image class="tunnel-switch"    src="/images/record1.png"
+    style="width: 80rpx; height: 100rpx;" mode="aspectFit"  ></image>
+  </view>
+  <view class="info" bindtap="photo">
+   <text class="item">照片Photo </text>
+   <image class="tunnel-switch"    src="/images/photo.png"
+    style="width: 80rpx; height: 100rpx;" mode="aspectFit" ></image>
+  </view>
+ </view>
+  <view class="block" bindtap="dialmanager">
+  <view class="info">
+   <text class="item">负责人Manager </text>
+   <text class="data">{{result.manager.name}}</text>
+  </view>  
+  <view class="info">
+   <text class="item">电话Tel </text>
+   <text class="data">{{result.manager.tel}}</text>
+  </view>
+ </view>
+ <view class="block" bindtap="dialrepair">
+  <view class="info">
+   <text class="item">维修人员Repair Man </text>
+   <text class="data">{{result.repair.name}}</text>
+  </view>  
+  <view class="info">
+   <text class="item">电话Tel </text>
+   <text class="data">{{result.repair.tel}}</text>
+  </view>
+ </view>
+ <view class="block">
+  <view class="info">
+   <text class="item">提交SubmittedAt </text>
+   <text class="data">{{result.createdAt}}</text>
+  </view>  
+    <view class="info">
+   <text class="item">受理AcceptedAt </text>
+   <text class="data">{{result.accept}}</text>
+  </view>  
+  <view class="info">
+   <text class="item">完成FinishedAt </text>
+   <text class="data">{{result.finish}}</text>
+  </view>
+ </view></view>

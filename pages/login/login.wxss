@@ -1,0 +1,22 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  background-color: #e6e6e6;
+
+}
+
+.avatar {
+  width: 500rpx;
+  height: 500rpx;
+
+}
+
+.item {
+  color: #66ccff;
+  font-size: 60rpx;
+
+}
+

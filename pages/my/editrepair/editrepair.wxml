@@ -1,0 +1,38 @@
+<!--pages/my/editrepair/editrepair.wxml-->
+<image class="toWrite" bindtap="toAdd" src="/images/add.png"></image>
+<view class="page">
+    <view class="page__hd i-header">
+        <view class="g-bd">
+            <view></view>
+            <view class="g-bda">
+                <view  class="g-bda-userinfo">
+                    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+                    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+  <scroll-view lower-threshold="800" bindscrolltolower="pullUpLoad" upper-threshold="0" scroll-y="true" style="height: {{windowHeight}}px;  ">
+    <view class="page__bd">
+
+      <!--<button type="primary" bindtap="toAddDiary" hover-class="other-button-hover"> 增加日记 </button>-->
+      <view class="weui-panel">
+        <view class="weui-panel__hd">维修人员列表 Repair Person List</view>
+        <view class="weui-panel__bd">
+          <view bindtap="click" class="weui-media-box weui-media-box_text" wx:for="{{List}}"wx:key="ListItem" id="{{item.objectId}}" data-name="{{item.name}}" data-tel="{{item.tel}}" >
+          <view  >
+            <view   class="weui-media-box__title weui-media-box__title_in-text">
+              {{item.name}}</view>
+            <view   class="weui-media-box__desc">{{item.tel}}</view>
+         </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="page__ft">
+      <view class="page__bd page__bd_spacing">
+        
+      </view>
+    </view>
+  </scroll-view>
+</view>

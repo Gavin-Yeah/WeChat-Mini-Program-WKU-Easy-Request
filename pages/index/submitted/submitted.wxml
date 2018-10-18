@@ -1,0 +1,54 @@
+<!--pages/requestinfo/requestinfo.wxml-->
+<view class="container">
+<!-- specific information --> 
+ <view wx:if="{{ismanager===1}}" class="block">
+  <view class="info">
+   <text class="item">姓名Name</text>
+   <text class="data">{{result.user.name}}</text>
+  </view>
+  <view class="info">
+   <text class="item">电话Tel</text>
+   <text class="data" > {{result.user.tel}}</text>
+  </view>
+ </view>
+ <view class="block">
+  <view class="info">
+   <text class="item">类型Type</text>
+   <text class="data">{{result.facilitytype}}</text>
+  </view>
+  <view class="info">
+   <text class="item">地点Location</text>
+   <text class="data" >{{result.facilitylocation}}</text>
+  </view>
+  <view class="info" bindtap="description">
+   <text class="item">简介Description</text>
+    <image class="tunnel-switch"    src="/images/record1.png"
+    style="width: 80rpx; height: 100rpx;" mode="aspectFit"  ></image>
+  </view>
+  <view class="info" bindtap="photo">
+   <text class="item">照片Photo</text>
+   <image class="tunnel-switch"    src="/images/photo.png"
+    style="width: 80rpx; height: 100rpx;" mode="aspectFit" ></image>
+  </view>
+ </view>
+ <view class="block">
+  <view class="info">
+   <text class="item">提交SubmittedAt: </text>
+   <text class="data">{{result.createdAt}}</text>
+  </view>  
+
+ 
+ </view>
+ <view wx:if="{{ismanager===1}}" class="info" style="padding-top:50rpx">
+   <button class="button" style="background-color: #66b2ff"  type="primary" bindtap="submit" form-type="submit" >受理Accept</button>
+   <button class="button" style="background-color: #66b2ff"  type="primary" bindtap="reject" form-type="submit" >拒绝Reject</button>
+</view>
+
+</view>
+
+
+
+
+
+
+

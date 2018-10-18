@@ -1,0 +1,19 @@
+<!--pages/my/editrepair/newrepair/newrepair.wxml-->
+<form bindsubmit="formSubmit" >
+ <view class="tunnel">
+ <view class="tunnel-text">
+  <text class="item" style="color:#0377f9;">姓名 Name:  </text>
+  <input class="data" style="color:#0377f9;" input type="text" name="name"  auto-focus/>
+
+ </view>
+
+  <view class="tunnel-text">
+  <text class="item" style="color:#0377f9;">电话 Tel:  </text>
+  <input class="data" style="color:#0377f9;" input type="text" name="tel"/>
+
+ </view>
+ </view>
+
+ 
+   <button class="button" style="background-color: #66b2ff"  type="primary"  form-type="submit" >确认 Confirm</button>
+ </form>

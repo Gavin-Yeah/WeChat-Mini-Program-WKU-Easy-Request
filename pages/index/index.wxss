@@ -1,0 +1,149 @@
+/**index.wxss**/
+
+
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+
+.navbar{ 
+ flex: none; 
+ display: flex; 
+ background: #fff; 
+} 
+.navbar .item{ 
+ position: relative; 
+ flex: auto; 
+ text-align: center; 
+ line-height: 100rpx; 
+  color: #cce5ff; 
+} 
+.navbar .item.active{ 
+  color: #66b2ff;
+} 
+.navbar .item.active:after{ 
+ content: ""; 
+ display: block; 
+ position: absolute; 
+ bottom: 0; 
+ left: 0; 
+ right: 0; 
+ height: 4rpx; 
+ background:#cce5ff; 
+} 
+
+
+
+.weui-media-box{
+  padding-bottom: 0px;
+  color: #3399ff;
+  
+}
+.weui-media-time{
+  width:300rpx;
+  height: 1em;
+  overflow: hidden;
+  color:  #3399ff;
+}
+
+.weui-cells__title{
+  text-align: left;
+}
+textarea,input{
+  text-align: left;
+  color: #3399ff;
+}
+.weui-cells {
+  border:1px solid #3891f8;
+}
+.weui-cells__title{
+  padding-left: 0px;
+  color: #3399ff;
+}
+.weui-dialog__ft button{
+  background: none;
+  padding: 0px;
+  margin: 0px;
+}
+form .weui-dialog__bd:first-child {
+  padding:0px 30rpx 1.7em;
+  
+}
+.page__ft{
+      padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+
+.searchbar-result{
+  border:none;
+    margin-top: 0;
+    font-size: 30rpx;
+}
+.searchbar-result:before{
+    display: none;
+}
+
+.header{
+  background: #ecf4fc;
+      position: relative;
+   box-sizing: border-box;
+  width: 100%;
+  line-height: 100rpx;
+text-align: center;
+
+  
+}
+.add{
+    font-size: 40rpx;
+     color: #66b2ff;
+     
+     
+}
+.image{
+  width: 70rpx; 
+  height: 70rpx;
+  left: 90rpx;
+  top:20rpx;
+ 
+ position:absolute;
+}
+.weui-media-box__desc{
+ color:#3399ff;
+  }
+
+  .weui-media-box__title {
+  font-weight: 400;
+  font-size: 45rpx;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.weui-media-box__desc {
+  color: #999999;
+  font-size: 35rpx;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.weui-media-box__info {
+  margin-top: 20rpx;
+  padding-bottom: 5rpx;
+  font-size: 35rpx;
+ 
+  line-height: 1em;
+  list-style: none;
+  overflow: hidden;
+}

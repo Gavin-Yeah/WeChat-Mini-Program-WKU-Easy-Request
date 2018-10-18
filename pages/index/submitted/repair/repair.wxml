@@ -1,0 +1,21 @@
+<!--pages/board/submitted/repair/repair.wxml-->
+<view class="container">
+<form bindsubmit="formSubmit" report-submit='true'>
+
+
+ <view class="tunnel">
+  <view class="tunnel-text">
+ 
+   <picker bindchange="bindPickerChange" name="repair" value="{{index}}" range="{{array}}">
+    <view class="text">
+      Repair Person：{{array[index]}}
+    </view>
+  </picker>
+ </view>
+
+
+</view>
+  <button class="button" style="background-color: #66b2ff"  type="primary" form-type="submit" >Submit</button>
+
+</form>
+</view>

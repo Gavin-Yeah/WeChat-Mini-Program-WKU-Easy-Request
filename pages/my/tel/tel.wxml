@@ -1,0 +1,14 @@
+<!--pages/my/tel/tel.wxml-->
+<!--pages/my/name/name.wxml-->
+<form bindsubmit="formSubmit" >
+ <view class="tunnel">
+ <view class="tunnel-text">
+  <text class="item"  style="color:#0377f9;">电话Tel:  </text>
+  <input  style="color:#0377f9;" input type="text" name="tel" value="{{tel}}" auto-focus/>
+
+ </view>
+ </view>
+
+ 
+   <button class="button" style="background-color: #66b2ff"  type="primary"  form-type="submit" >确认 Confirm</button>
+ </form>

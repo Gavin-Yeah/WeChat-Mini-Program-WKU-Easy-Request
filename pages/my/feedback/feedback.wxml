@@ -1,0 +1,29 @@
+<view class="page">
+  <view class="page__hd i-header">
+    <view class="g-bd">
+      <view> </view>
+      <view class="g-bda">
+        <view bindtap="" class="g-bda-userinfo">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page__bd">
+  </view>
+  <view class="btn-area">
+    <form bindsubmit="addFeedback">
+      <view class="weui-cells__title">建议 Suggestions</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" name="content" bindinput="bindinput"placeholder="请输入建议内容Please input suggestions" style="height: 9em" maxlength="300" />
+            <view class="weui-textarea-counter">{{counter}}/300</view>
+          </view>
+        </view>
+      </view>
+      <button class="weui-btn" formType="submit" type="primary" style="background-color: #66b2ff" >立即提交 Submit</button>
+    </form>
+  </view>
+</view>

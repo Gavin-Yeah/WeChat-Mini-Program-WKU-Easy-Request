@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+
+   
+   
+      <image class="avatar" src="/images/icon.png" background-size="cover" mode="aspectFit" bindtap="button"></image>
+      <text class="item">WKU Easy Request</text>
+  
+
+</view>

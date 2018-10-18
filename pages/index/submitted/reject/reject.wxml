@@ -1,0 +1,20 @@
+<!--pages/index/submitted/reject/reject.wxml-->
+<view class="container">
+<form bindsubmit="formSubmit" report-submit='true'  >
+
+ <view class="tunnel">
+
+
+<view class="tunnel-text">
+  <textarea class="textinput"placeholder="Reason:" placeholder-style='color: #007AFF;' maxlength="500" style="height:370rpx; color: #007AFF;" name="reason" auto-focus/>  
+ 
+ </view>
+</view>
+  <button class="button" style="background-color: #66b2ff"  type="primary" form-type="submit" >Submit</button>
+
+</form>
+</view>
+
+
+
+

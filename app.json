@@ -1,0 +1,54 @@
+{
+  "pages": [ 
+    "pages/index/index",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/new/new",
+    "pages/my/read/read",
+    "pages/my/code/code",
+    "pages/index/submitted/submitted",
+    "pages/index/processing/processing",
+    "pages/index/history/history", 
+    "pages/my/name/name",
+    "pages/my/tel/tel",
+    "pages/my/release/release",
+    "pages/my/feedback/feedback",
+    "pages/index/submitted/reject/reject",
+    "pages/index/submitted/repair/repair",
+    "pages/my/editrepair/editrepair",
+    "pages/my/editrepair/newrepair/newrepair",
+    "pages/my/editrepair/edit/edit"
+   
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#99ccff",
+    "navigationBarTitleText": "温肯简修 WKU ER",
+    "navigationBarTextStyle": "white"
+
+  },
+  "tabBar": {
+    "width": "128rpx",
+    "height": "128rpx",
+    "backgroundColor": "#fff",
+    "color": "#cce5ff",
+    "selectedColor": "#99ccff",
+    "borderStyle": "light",
+    "list": [
+      {
+        "iconPath": "./images/request.png",
+        "selectedIconPath": "./images/request1.png",
+        "pagePath": "pages/index/index",
+        "text": "维修单 Board",
+        "position": "Top"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人 My",
+        "selectedIconPath": "./images/my1.png",
+        "iconPath": "./images/my.png"
+      }
+    ]
+  }
+}

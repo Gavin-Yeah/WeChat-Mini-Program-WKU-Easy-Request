@@ -1,0 +1,44 @@
+ .tunnel {
+   height: auto;
+    padding: 0 20rpx 0 20rpx;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.tunnel-text {
+    width: 100%;
+    line-height: 52px;
+    font-size: 34rpx;
+    color: #007AFF;
+}
+.tunnel {
+    padding: 0 0 0 40rpx;
+}
+.textinput{
+  line-height: 60rpx;
+  margin-top: 20rpx;
+}
+.tunnel-text {
+      width: 100%;
+    line-height: 52px;
+    font-size: 34rpx;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.tunnel-text:first-child {
+    border-top: none;
+}
