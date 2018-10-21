@@ -3,8 +3,8 @@
 <form bindsubmit="formSubmit" >
  <view class="tunnel">
  <view class="tunnel-text">
-  <text class="item"  style="color:#0377f9;">电话Tel:  </text>
-  <input  style="color:#0377f9;" input type="text" name="tel" value="{{tel}}" auto-focus/>
+  <text  style="color:#0377f9;">电话 Tel:  </text>
+  <input   style="color:#0377f9;" input type="text" name="tel" value="{{tel}}" auto-focus/>
 
  </view>
  </view>

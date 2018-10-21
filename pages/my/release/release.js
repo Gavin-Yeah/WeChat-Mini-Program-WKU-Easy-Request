@@ -144,7 +144,7 @@ if(state===1){
 }
 if(state===2){
   wx.navigateTo({
-    url: "/pages/index/history/history?objectId=" + e.currentTarget.id
+    url: "/pages/index/history/history?objectId=" + e.target.id
   })
 }
   }

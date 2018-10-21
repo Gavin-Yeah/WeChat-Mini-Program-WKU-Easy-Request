@@ -50,7 +50,7 @@ page {
 
 .tunnel-text {
     width: 100%;
-    line-height: 52px;
+    line-height: r100px;
     font-size: 34rpx;
     color: #007AFF;
 }
@@ -81,7 +81,7 @@ page {
 }
 .imageline{
     width: 100%;
-    line-height: 52px;
+    line-height: 100rpx;
     font-size: 34rpx;
     position: relative;
     color: #222;

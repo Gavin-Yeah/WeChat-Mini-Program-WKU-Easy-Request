@@ -24,7 +24,7 @@ page {
 
 .info {
       width: 100%;
-    line-height: 52px;
+    line-height: 100rpx;
     font-size: 34rpx;
     position: relative;
     display: flex;
